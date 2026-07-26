@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Kisan Mitra AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--============================
+              MAIN CONTAINER
+    =============================-->
+
+    <div class="container">
+
+
+        <!--============================
+                    HEADER
+        =============================-->
+
+        <header class="header">
+
+            <div class="header-left">
+
+                <img src="assets/logo.png"
+                    alt="logo"
+                    class="logo">
+
+
+                <div class="title">
+
+                    <h2>Kisan Mitra AI</h2>
+
+                    <p>
+
+                        <span class="online"></span>
+
+                        Online • Smart Farming Assistant
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="new-chat-btn"
+                    title="New Chat">
+
+                    +
+
+                </button>
+
+
+                <button class="delete-chat-btn"
+                    title="Delete Chat">
+
+                    🗑
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!--============================
+                 CHAT BODY
+        =============================-->
+
+        <main class="chat-body"
+            id="chatBody">
+
+
+
+            <!-- AI MESSAGE -->
+
+            <div class="bot-message">
+
+                <img src="assets/bot.png"
+                    class="bot-image">
+
+
+                <div class="message">
+
+                    <h3>
+                        Kisan Mitra AI
+                    </h3>
+
+
+                    <p>
+
+                        👋 नमस्ते किसान भाई !
+
+                    </p>
+
+
+                    <p>
+
+                        मैं आपकी खेती से जुड़ी
+                        समस्याओं का समाधान करने
+                        के लिए यहाँ हूँ।
+
+                    </p>
+
+
+                    <p>
+
+                        आप मुझसे फसल, खाद,
+                        कीटनाशक, सिंचाई और
+                        रोग पहचान से जुड़े
+                        प्रश्न पूछ सकते हैं।
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!--==========================
+                SUGGESTION BUTTONS
+            ===========================-->
+
+
+            <div class="suggestion-box">
+
+
+                <button class="suggestion">
+
+                    🌾 गेहूं की खाद
+
+                </button>
+
+
+                <button class="suggestion">
+
+                    🐛 कीट नियंत्रण
+
+                </button>
+
+
+
+                <button class="suggestion">
+
+                    💧 सिंचाई सलाह
+
+                </button>
+
+
+
+                <button class="suggestion">
+
+                    🍀 फसल रोग
+
+                </button>
+
+
+            </div>
+
+
+        </main>
+
+
+
+        <!--============================
+                 IMAGE PREVIEW
+        =============================-->
+
+        <div class="image-preview"
+            id="imagePreview">
+
+        </div>
+
+
+
+
+        <!--============================
+                   FOOTER
+        =============================-->
+
+        <footer class="chat-footer">
+
+
+            <!-- VOICE BUTTON -->
+
+            <button class="voice-btn"
+
+                id="voiceButton">
+
+                🎤
+
+            </button>
+
+
+
+
+            <!-- INPUT BOX -->
+
+            <input type="text"
+
+                placeholder="अपना सवाल पूछें...."
+
+                id="message"
+
+                autocomplete="off">
+
+
+
+
+
+            <!-- SEND BUTTON -->
+
+            <button class="send-btn">
+
+                ➤
+
+            </button>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+
+    <!--============================
+                JAVASCRIPT
+    =============================-->
+<script src="config.js"></script>
+
+<script src="prompts.js"></script>
+
+<script src="memory.js"></script>
+
+<script src="storage.js"></script>
+
+<script src="typing.js"></script>
+
+<script src="suggestions.js"></script>
+
+<script src="voice.js"></script>
+
+<script src="api.js"></script>
+
+<script src="script.js"></script>
+   
+
+</body>
+
+</html>
