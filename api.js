@@ -234,13 +234,15 @@ API KEY उपलब्ध नहीं है।
 
         if (!response.ok) {
 
-            throw new Error(
+    const error = await response.json();
 
-                `API ERROR : ${response.status}`
+    console.log(error);
 
-            );
+    alert(JSON.stringify(error, null, 2));
 
-        }
+    throw new Error(JSON.stringify(error));
+
+}
 
 
 
